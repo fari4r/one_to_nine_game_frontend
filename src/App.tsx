@@ -13,7 +13,7 @@ interface PlayersMap {
 
 type GameState = "lobby" | "waiting" | "playing" | "over";
 
-const socket: Socket = io("http://localhost:3001", {
+const socket: Socket = io("https://one-to-nine-game-backend.onrender.com", {
   transports: ["websocket"],
   upgrade: false,
 });
